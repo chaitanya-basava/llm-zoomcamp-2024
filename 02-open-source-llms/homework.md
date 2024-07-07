@@ -1,5 +1,7 @@
 ## Homework: Open-Source LLMs
 
+Homework file copied from original zoomcamp [repo](https://github.com/chaitanya-basava/llm-zoomcamp-2024/blob/main/02-open-source-llms/homework.md) for my reference.
+
 In this homework, we'll experiment more with Ollama
 
 > It's possible that your answers won't match exactly. If it's the case, select the closest one.
@@ -44,6 +46,8 @@ What's the content of the file related to gemma?
 
 Test the following prompt: "10 * 10". What's the answer?
 
+Answer: `The answer to the prompt is 100.`
+
 ## Q4. Donwloading the weights 
 
 We don't want to pull the weights every time we run
@@ -76,7 +80,7 @@ What's the size of the `ollama_files/models` folder?
 
 * 0.6G
 * 1.2G
-* 1.7G
+* 1.7G *
 * 2.2G
 
 Hint: on linux, you can use `du -h` for that.
@@ -88,13 +92,15 @@ to a new image
 
 For that, let's create a `Dockerfile`:
 
-```dockerfile
+```
 FROM ollama/ollama
 
 COPY ...
 ```
 
 What do you put after `COPY`?
+
+Ans: `. /root/.ollama`
 
 ## Q6. Serving it 
 
@@ -132,7 +138,7 @@ How many completion tokens did you get in response?
 * 304
 * 604
 * 904
-* 1204
+* 1204 *
 
 ## Submit the results
 

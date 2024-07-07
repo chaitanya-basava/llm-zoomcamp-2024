@@ -53,7 +53,7 @@ pip install elasticsearch
 Which function do you use for adding your data to elastic?
 
 * `insert`
-* `index`
+* `index` *
 * `put`
 * `add`
 
@@ -66,7 +66,7 @@ For a query "How do I execute a command in a running docker container?", what's 
 Use only `question` and `text` fields and give `question` a boost of 4
 
 * 94.05
-* 84.05
+* 84.05 *
 * 74.05
 * 64.05
 
@@ -79,7 +79,7 @@ Now let's only limit the questions to `machine-learning-zoomcamp`.
 Return 3 results. What's the 3rd question returned by the search engine?
 
 * How do I debug a docker container?
-* How do I copy files from a different folder into docker container’s working directory?
+* How do I copy files from a different folder into docker container’s working directory? *
 * How do Lambda container images work?
 * How can I annotate a graph?
 
@@ -112,7 +112,7 @@ Put the data from Q4 there.
 What's the length of the result? (use the `len` function)
 
 * 962
-* 1462
+* 1462 *
 * 1962
 * 2462
 
@@ -129,7 +129,7 @@ pip install tiktoken
 
 Let's calculate the number of tokens in our query: 
 
-```python
+```
 encoding = tiktoken.encoding_for_model("gpt-4o")
 ```
 
@@ -137,12 +137,12 @@ Use the `encode` function. How many tokens does our prompt have?
 
 * 122
 * 222
-* 322
+* 322 *
 * 422
 
 Note: to decode back a token into a word, you can use the `decode_single_token_bytes` function:
 
-```python
+```
 encoding.decode_single_token_bytes(63842)
 ```
 
